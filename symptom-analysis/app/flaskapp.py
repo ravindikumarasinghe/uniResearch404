@@ -7,7 +7,7 @@ app = Flask(__name__, static_folder=os.path.abspath('static'))
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return jsonify({'intro': "symptom-analysis"}), 200
 
     
 
